@@ -73,4 +73,8 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  config.hosts << "d9c5d5684d0a401fa2f27cd174fbf7d8.vfs.cloud9.ap-northeast-1.amazonaws.com"
+
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 end
